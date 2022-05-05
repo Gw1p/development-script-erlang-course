@@ -1,0 +1,1 @@
+В этом репозитории находятся исходные файлы для онлайн курса по Erlang на Udemy: https://www.udemy.com/course/best-erlang-course
