@@ -1,0 +1,20 @@
+-file("header_example.erl", 1).
+
+-module(header_example).
+
+-export([start/0]).
+
+-file("header.hrl", 1).
+
+-record(person,{name = "", id}).
+
+-file("header_example.erl", 4).
+
+start() ->
+    P = #person{name = "John", id = 1},
+    io:fwrite("~p~n", [P#person.id]),
+    io:fwrite("~p~n", [P#person.name]),
+    io:fwrite("~p~n", [{1 + 2}]).
+
+
+
